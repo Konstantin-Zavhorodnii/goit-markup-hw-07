@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <div class="container">
         <div class="heder-container">
           <nav class="header-nav">
@@ -35,6 +35,11 @@
               <li><a class="header-link" href="">Contacts</a></li>
             </ul>
           </nav>
+          <button type="button" class="mobile-menu-open">
+            <svg class="mobile-menu-icon" width="32px" , hieght="22px">
+              <use href="./images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
           <address>
             <div class="address-link">
               <ul class="list header-addres">
@@ -55,7 +60,7 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <!-- <section class="section-hero">
         <div class="container">
           <h1 class="header-hero">
             Effective Solutions <br />
@@ -106,28 +111,55 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list list-doing">
             <li>
-              <img
-                src="./images/comp.jpg"
-                alt="comp"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/desk-comp.jpg    1x,
+                    ./images/desktop/desk-comp@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/comp.jpg"
+                  alt="comp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/mobiles.jpg"
-                alt="mobiles"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/mobile.jpg    1x,
+                    ./images/desktop/mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/mobiles.jpg"
+                  alt="mobiles"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/compmob.jpg"
-                alt="compmob"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/desk-comp-mobile.jpg    1x,
+                    ./images/desktop/desk-comp-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/compmob.jpg"
+                  alt="compmob"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -137,13 +169,37 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="list list-team">
             <li class="team-items">
-              <img
-                class="photo-team"
-                src="./images/photo-MarkGuerrero.jpg"
-                alt="Product Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/mobile-mark.jpg    1x,
+                    ./images/mobile/mobile-mark@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/tablet-mark.jpg     1x,
+                    ./images/tablet//tablet-mark@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/desk-mark.jpg    1x,
+                    ./images/desktop/desk-mark@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="photo-team"
+                  src="./images/photo-MarkGuerrero.jpg"
+                  alt="Product Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="section-name">Mark Guerrero</h3>
                 <p class="job-title">Product Designer</p>
@@ -186,13 +242,38 @@
               </div>
             </li>
             <li class="team-items">
-              <img
-                class="photo-team"
-                src="./images/photo-TomFord.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/mobile-tom.jpg    1x,
+                    ./images/mobile/mobile-tom@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/tablet-tom.jpg     1x,
+                    ./images/tablet//tablet-tom@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/desk-tom.jpg    1x,
+                    ./images/desktop/desk-tom@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="photo-team"
+                  src="./images/photo-TomFord.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="section-name">Tom Ford</h3>
                 <p class="job-title">Frontend Developer</p>
@@ -235,13 +316,38 @@
               </div>
             </li>
             <li class="team-items">
-              <img
-                class="photo-team"
-                src="./images/photo-CamilaGarcia.jpg"
-                alt="Marketing"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/mobile-camila.jpg    1x,
+                    ./images/mobile/mobile-camila@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/tablet-camila.jpg     1x,
+                    ./images/tablet//tablet-camila@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/desk-camila.jpg    1x,
+                    ./images/desktop/desk-camila@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="photo-team"
+                  src="./images/photo-CamilaGarcia.jpg"
+                  alt="Marketing"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="section-name">Camila Garcia</h3>
                 <p class="job-title">Marketing</p>
@@ -284,13 +390,37 @@
               </div>
             </li>
             <li class="team-items">
-              <img
-                class="photo-team"
-                src="./images/photo-DanielWilson.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
+              <picture>
+                <img
+                  class="photo-team"
+                  src="./images/photo-DanielWilson.jpg"
+                  alt="UI Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/mobile/mobile-daniel.jpg    1x,
+                  ./images/mobile/mobile-daniel@2x.jpg 2x
+                "
               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/tablet/tablet-daniel.jpg     1x,
+                  ./images/tablet//tablet-daniel@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/desktop/desk-daniel.jpg    1x,
+                  ./images/desktop/desk-daniel@2x.jpg 2x
+                "
+              />
+
               <div class="team-description">
                 <h3 class="section-name">Daniel Wilson</h3>
                 <p class="job-title">UI Designer</p>
@@ -383,9 +513,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-content">
         <div class="footer-logo-text">
           <div class="footer-logo">
@@ -527,6 +657,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
