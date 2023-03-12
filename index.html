@@ -35,12 +35,12 @@
               <li><a class="header-link" href="">Contacts</a></li>
             </ul>
           </nav>
-          <button type="button" class="mobile-menu-open">
-            <svg class="mobile-menu-icon" width="32px" , hieght="22px">
+          <button type="button" class="mobile-menu-open js-open-menu">
+            <svg class="mobile-menu-icon">
               <use href="./images/symbol-defs.svg#icon-burger"></use>
             </svg>
           </button>
-          <address>
+          <address class="header-address">
             <div class="address-link">
               <ul class="list header-addres">
                 <li>
@@ -58,9 +58,77 @@
           </address>
         </div>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="8px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-items">
+              <a href="#" class="mobile-menu-link">Studio</a>
+            </li>
+            <li class="mobile-menu-items">
+              <a href="./portfolio.html" class="mobile-menu-link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-items">
+              <a href="#" class="mobile-menu-link">Contacts</a>
+            </li>
+          </ul>
+          <address class="mobile-menu-address">
+            <div class="mobile-address">
+              <ul class="mobile-address-list">
+                <li class="mobile-address-item">
+                  <a href="tel:+110001111111" class="mobile-address-phone"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-address-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-address-email"
+                  ></a
+                  >info@devstudio.com"
+                </li>
+              </ul>
+            </div>
+          </address>
+          <ul class="social-list-mobile">
+            <li>
+              <a href="#" class="social-mobile-link">
+                <svg class="social-icon-mobile">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-mobile-link">
+                <svg class="social-icon-mobile">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-mobile-link">
+                <svg class="social-icon-mobile">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-mobile-link">
+                <svg class="social-icon-mobile">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <!-- <section class="section-hero">
+      <section class="section-hero">
         <div class="container">
           <h1 class="header-hero">
             Effective Solutions <br />
@@ -71,7 +139,7 @@
           </button>
         </div>
       </section>
-      <section class="section section-features">
+      <!-- <section class="section section-features">
         <div class="container">
           <h2 class="section-title" hidden>features</h2>
           <ul class="list features-list">
@@ -105,8 +173,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list list-doing">
@@ -163,8 +231,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section-team">
+      </section> -->
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list list-team">
@@ -464,8 +532,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section-customers">
+      </section> -->
+      <!-- <section class="section section-customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list">
@@ -575,7 +643,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="bacgdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -657,6 +725,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

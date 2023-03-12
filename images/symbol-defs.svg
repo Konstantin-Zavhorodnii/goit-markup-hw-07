@@ -72,8 +72,8 @@
 <symbol id="icon-send" viewBox="0 0 10 8">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M9.603-0.001l-9.603 4.501 3.069 0.947 4.733-3.698-3.6 4.048 0.003 0.001-0.004-0.001v2.204l1.721-1.673 2.181 0.673 1.5-7.002z"></path>
 </symbol>
-<symbol id="icon-burger" viewBox="0 0 12 8">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.0909" d="M0.49 7.289h10.742M0.49 3.904h10.742M0.49 0.52h10.742"></path>
+<symbol id="icon-burger" viewBox="0 0 32 22">
+<path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/></g><defs><clipPath id="a">
 </symbol>
 </defs>
 </svg>
