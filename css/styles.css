@@ -379,6 +379,9 @@ h6 {
     height: 22px;
     fill: #2e2f42;
   }
+  .mobile-menu-list {
+    margin-bottom: auto;
+  }
   .mobile-menu-link {
     text-decoration: none;
     color: var(--text-color-primery);
@@ -391,8 +394,6 @@ h6 {
   .mobile-menu-link:focus {
     color: var(--text-color-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .mobile-menu-list {
   }
   .mobile-menu-items {
     padding-bottom: 40px;
@@ -428,6 +429,7 @@ h6 {
   }
   .social-list-mobile {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 56px;
   }
@@ -462,13 +464,16 @@ h6 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu-container {
     position: relative;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
     max-width: 428px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .mobile-menu {
     position: fixed;
@@ -1490,8 +1495,6 @@ h6 {
     color: var(--text-color-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-menu-list {
-  }
   .mobile-menu-items {
     padding-bottom: 40px;
   }
@@ -1560,13 +1563,13 @@ h6 {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .mobile-menu-container {
+@media screen and (max-width: 767px) {
+  /* .mobile-menu-container {
     position: relative;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
-  }
+  } */
   .mobile-menu {
     position: fixed;
     z-index: 1000;
@@ -2177,6 +2180,8 @@ h6 {
 
 .bacgdrop {
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
   z-index: 100;
@@ -2247,9 +2252,7 @@ h6 {
 .modal-close-btn:focus .close-btn-icon {
   fill: #ffffff;
 }
-.modal-form {
-  width: 360px;
-}
+
 .form-title {
   font-family: "Roboto";
   font-style: normal;
